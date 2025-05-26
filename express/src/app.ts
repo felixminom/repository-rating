@@ -1,6 +1,7 @@
-import express from "express"
-import GitHubRatingsRouter from './controllers/githubRatingsController';
-import { errorHandler } from "./middlewares/errorHandler";
+import express from 'express'
+
+import GitHubRatingsRouter from './controllers/githubRatingsController'
+import { errorHandler } from './middlewares/errorHandler'
 
 const app = express()
 

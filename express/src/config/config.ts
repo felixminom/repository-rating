@@ -1,15 +1,15 @@
 import dotenv from 'dotenv'
 
 interface Config {
-    port: number
-    nodeEnv: string
+  nodeEnv: string
+  port: number
 }
 
 dotenv.config()
 
 const config: Config = {
-    port: Number(process.env.PORT) || 8080,
-    nodeEnv: process.env.NODE_ENV || 'dev',
+  nodeEnv: process.env.NODE_ENV ?? 'dev',
+  port: Number(process.env.PORT) || 8080,
 }
 
 export default config

@@ -1,8 +1,8 @@
-import { UUID } from "../common";
+import { UUID } from '../common'
 
 export interface GithubRepositoryRating {
-    id: UUID,
-    name: string,
-    starts: number,
-    createdAt: Date
+  createdAt: Date
+  id: UUID
+  name: string
+  starts: number
 }
